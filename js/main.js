@@ -45,10 +45,10 @@ var app = module.exports = new Vue({
             this.popupOpened = false
         })
         this.$on("onDrawerClose", () => {
-            this.drawerOpened = false
+            this.toggleAboutUs()
         })
         this.$on("onNavigationClose", () => {
-            this.navigationOpened = false
+            this.toggleNavigation()
         })
         this.refresh()
     },
@@ -62,22 +62,25 @@ var app = module.exports = new Vue({
                 cache: false,
                 success: (res) => {
                     this.initialized = true
-                    var libs = res.libs
-                    // set position by random
-                    libs.forEach((lib) => {
-                        lib.pos = {
-                            t: Math.floor(Math.random() * (mainH - MAX_IMAGE_SIZE)),
-                            l: Math.floor(Math.random() * (mainW - MAX_IMAGE_SIZE))
-                        }
-                        lib.selected = true
-                    })
-                    this.items = libs
+                    this.updateLibs(res.libs)
                     this.keywords = res.keywords
                 },
                 error: () => {
                     this.initialized = true
                 }
             })
+        },
+
+        updateLibs: function(libs){
+            // set position by random
+            libs.forEach((lib) => {
+                lib.pos = {
+                    t: Math.floor(Math.random() * (mainH - MAX_IMAGE_SIZE)),
+                    l: Math.floor(Math.random() * (mainW - MAX_IMAGE_SIZE))
+                }
+                lib.selected = true
+            })
+            this.items = libs
         },
 
         onChangeSelection: function(ids){
@@ -115,10 +118,18 @@ var app = module.exports = new Vue({
 
         toggleAboutUs: function(){
             this.drawerOpened = !this.drawerOpened
+            this.shuffleMap()
         },
 
+        // for mobile
         toggleNavigation: function(){
             this.navigationOpened = !this.navigationOpened
+            this.shuffleMap()
+        },
+
+        shuffleMap: function(){
+            resize()
+            this.updateLibs(this.items)
         }
     }
 })
