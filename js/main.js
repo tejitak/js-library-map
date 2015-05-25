@@ -10,7 +10,9 @@ import draggable from './directives/draggable'
 
 Vue.config.debug = OPTION.debug
 
-module.exports = new Vue({
+var MAX_IMAGE_SIZE = util.isMobileScreen() ? 80 : 160
+
+var app = module.exports = new Vue({
 
     el: '#app',
 
@@ -28,12 +30,13 @@ module.exports = new Vue({
         selectedItem: {},
         popupOpened: false,
         drawerOpened: false,
-        navigationOpened: true,
+        navigationOpened: !util.isMobileScreen(),
         initialized: false,
         creators: [{
             name: "Takuya Tejima",
             img: "http://graph.facebook.com/10152855301715662/picture?type=normal",
-            job: "Developer"
+            job: "Developer",
+            url: "https://github.com/tejitak"
         }]
     },
 
@@ -63,8 +66,8 @@ module.exports = new Vue({
                     // set position by random
                     libs.forEach((lib) => {
                         lib.pos = {
-                            t: Math.floor(Math.random() * (mainH - 100/*image max size*/)),
-                            l: Math.floor(Math.random() * (mainW - 200/*image max size*/))
+                            t: Math.floor(Math.random() * (mainH - MAX_IMAGE_SIZE)),
+                            l: Math.floor(Math.random() * (mainW - MAX_IMAGE_SIZE))
                         }
                         lib.selected = true
                     })
@@ -142,7 +145,7 @@ var resize = function(){
         $footer = $("footer")
     // set width and height
     mainH = winH - $footer.height()
-    mainW = winW - containers.tabWrap.width()
+    mainW = winW - (app.navigationOpened ? containers.tabWrap.width() : 0)
     // body
     $body.height(winH)
     // map

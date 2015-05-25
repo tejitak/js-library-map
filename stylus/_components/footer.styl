@@ -3,7 +3,7 @@
 */
 
 $height = 78px
-$margin-top = floor(($height * .4))px
+$margin-top = 24px
 
 .component__footer
   clearfix()
@@ -14,6 +14,7 @@ $margin-top = floor(($height * .4))px
   height $height
   z-index $z-index_middle
   background #fff
+  border-top 1px solid #1e2d2c
 
   .servive-name
     padding 0
@@ -29,22 +30,19 @@ $margin-top = floor(($height * .4))px
     display block
     width 210px
     height 30px
-    span
-      display none
-   
 
   .footer_navigations
     float left
     clearfix()
-    margin-top $margin-top + 2
-    width 300px
+    margin-top $margin-top + 6
+    width 340px
     a
       @extend .navigation-hover
     .nav_item
       letter-spacing .1em
       float left
       inline-block(.2)
-      fontsize 14px
+      font-size 14px
       font-weight bold
       margin-right 30px
       color #5f5f5f
@@ -88,7 +86,12 @@ $margin-top = floor(($height * .4))px
 
     .social_item
       display inline-block
+      margin 0 8px
       &.twitter
+        position relative
+        top -2px
+      &.github
+        width 80px
         position relative
         top -2px
       
@@ -97,17 +100,22 @@ $margin-top = floor(($height * .4))px
     height $height
 
     .servive-name
-      margin 20px
+      /*margin 20px
       width 140px
-      height 20px
+      height 20px*/
+      display none
 
     .footer_navigations
       width 170px
       margin-top 0px
       float none
       position absolute
-      top 44px
+      top 32px
       left 18px
+
+      .nav_item
+        margin-right 0
+        font-size 12px
 
       .deactive
         display none

@@ -2,7 +2,9 @@
   <div class="popup_content">
     <div class="scroll_container" function="scroll">
       <div class="lib_data">
-        <a v-attr="href: url" target="_blank" class="goto-url"><i class="icon"></i></a>
+      <dl>
+        <dt></dt><dd><a v-attr="href: url" target="_blank">{{url}}</a></dd>
+      </dl>
       </div>
 
       <div class="description" v-show="description">

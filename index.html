@@ -2,7 +2,14 @@
 <html>
 <head prefix="og: http://ogp.me/ns#  article: http://ogp.me/ns/article#">
   <meta charset="UTF-8">
-  <title>JS Library Map</title>
+  <title>JS Library Map - A Visualization of Modern JavaScript Libraries</title>
+  <meta property="og:title" content="JS Library Map - A Visualization of Modern JavaScript Libraries" >
+  <meta property="og:type" content="product" />
+  <meta property="og:description" content="JS Library Map shows a list of modern JavaScript libraries. You can see the information and characteristics of each library." />
+  <meta property="og:url" content="http://tejitak.github.io/js-library-map/" />
+  <meta property="og:image" content="http://tejitak.github.io/js-library-map/img/ogp-image.png" />
+  <meta property="og:site_name" content="JS Library Map - A Visualization of Modern JavaScript Libraries" />
+
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <!-- <link rel="shortcut icon" href="./favicon.ico" /> -->
@@ -32,6 +39,26 @@
         <p>Created by <a href="https://twitter.com/tejitak" target="_blank">tejitak</a></p>
       </div>
       <div class="footer_menu"><a href="javascript:;" class="nav_item" v-on="click: toggleNavigation()">MENU</a></div>
+      <div class="social_container">
+          <div class="social_item twitter">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tejitak.github.io/js-library-map/" data-via="" data-lang="en">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <div class="social_item" style="position: relative; top: -4px;">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="http://tejitak.github.io/js-library-map/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+          </div>
+           <div class="social_item github">
+                <iframe src="http://ghbtns.com/github-btn.html?user=tejitak&repo=js-library-map&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="104px" height="20px"></iframe>
+            </div>
+      </div>
     </footer>
     
     <!-- components -->
@@ -41,21 +68,23 @@
 
     <div class="component__drawer" v-component="vue-drawer" v-show="drawerOpened" v-transition="slide">
       <section class="about layout_section">
-        <h2 class="heading-2">Library Map</h2>
+        <h2 class="heading-2">JS Library Map</h2>
         <div class="descriptions">
-          <p>hoge</p>
+          <p>JS Library Map shows a list of modern JavaScript libraries.</p>
+          <p>You can see the information and characteristics of each library.</p>
         </div>
       </section>
       
       <section class="members layout_section last">
-        <h3 class="heading-3">Develop &amp; Design</h3>
         <dl class="profile" v-repeat="creators">
           <dt class="profile_photo">
             <img v-attr="src: img" />
           </dt>
           <dd class="profile_body">
-            <p class="profile_job">{{job}}</p>
-            <p class="profile_name">{{name}}</p>
+            <a v-attr="href: url" target="_blank">
+              <p class="profile_job">{{job}}</p>
+              <p class="profile_name">{{name}}</p>
+            </a>
           </dd>
         </dl>
       </section>

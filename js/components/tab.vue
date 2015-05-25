@@ -15,28 +15,19 @@
   <div class="tab component__tab" v-class="">
     <header class="tabHeader title-wrap" role="tab-trigger">
       <nav>
-        <div class="tab-trigger title" v-class="Selected: selectedTab == 'keywords'"><a href="javascript:;" v-on="click: selectedTab = 'keywords'">Keyowrds</a></div>
         <div class="tab-trigger title" v-class="Selected: selectedTab == 'libs'"><a href="javascript:;" v-on="click: selectedTab = 'libs'">Libraries</a></div>
+        <div class="tab-trigger title" v-class="Selected: selectedTab == 'keywords'"><a href="javascript:;" v-on="click: selectedTab = 'keywords'">Keyowrds</a></div>
       </nav>
     </header>
 
-    <section class="tabContent" v-show="selectedTab == 'keywords'">
-      <ul class="component__list" function="scroll-1">
-        <li class="item" v-repeat="keywords" v-class="selected: this == selectedKeyword">
-          <a href="javascript:;" v-on="click: selectKeyword(this)">{{name}}</a>
-        </li>
-      </ul>
-    </section>
-
     <section class="tabContent" v-show="selectedTab == 'libs'">
-
       <header class="component__filter" role="filter">
         <label for="filter-input">Filter</label>
         <input id="filter-input" type="text" placeholder="Library Name..." v-model="searchText" />
       </header>
 
       <ul class="component__list" function="scroll-2">
-        <li class="item" v-repeat="items | orderBy 'name' 1 | filterBy searchText in name" v-on="click: selectItem(this)" v-class="selected: this == selectedItem">
+        <li class="item" v-repeat="items | orderBy 'name' | filterBy searchText in name" v-on="click: selectItem(this)" v-class="selected: this == selectedItem">
           <dl>
             <dt>
               <span class="ranking">{{$index + 1}}:</span>
@@ -45,8 +36,16 @@
           </dl>
         </li>
       </ul>
-
     </section>
+
+    <section class="tabContent" v-show="selectedTab == 'keywords'">
+      <ul class="component__list" function="scroll-1">
+        <li class="item" v-repeat="keywords" v-class="selected: this == selectedKeyword">
+          <a href="javascript:;" v-on="click: selectKeyword(this)">{{name}} ({{libs.length}})</a>
+        </li>
+      </ul>
+    </section>
+
   </div>
 </template>
 
@@ -55,7 +54,7 @@ module.exports = {
     data: function(){
         return {
             title: "",
-            selectedTab: "keywords",
+            selectedTab: "libs",
             searchText: "",
             selectedKeyword : null,
             selectedItem: null,
