@@ -12,278 +12,354 @@
             "name": "jQuery",
             "url": "https://jquery.com/",
             "logo": "http://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/320px-JQuery_logo.svg.png",
-            "description": ""
+            "description": "jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript."
         },
         {
             "id": "ext",
             "name": "Sencha Ext JS",
             "url": "http://www.sencha.com/products/extjs/",
             "logo": "http://upload.wikimedia.org/wikipedia/fr/a/a2/Ext_js_logo.jpeg",
-            "description": ""
+            "description": "Limited time offer: buy Ext JS before 6/30/15 and you’ll get maintenance and support through 6/30/16 – plus you’ll be ready for Ext JS 6 when it ships July 1st."
         },
         {
             "id": "angular",
             "name": "AngularJS",
             "url": "https://angularjs.org/",
             "logo": "https://angularjs.org/img/AngularJS-large.png",
-            "description": ""
+            "description": "AngularJS is what HTML would have been, had it been designed for building web-apps. Declarative templates with data-binding, MVW, MVVM, MVC, dependency injection and great testability story all implemented with pure client-side JavaScript!"
         },
         {
             "id": "polymer",
             "name": "Polymer",
             "url": "https://www.polymer-project.org/",
             "logo": "https://www.polymer-project.org/images/logos/lockup.svg",
-            "description": ""
+            "description": "Polymer is a library that uses the latest web technologies to let you create custom HTML elements. Build anything from a button to a complete application as an encapsulated, reusable element that works across desktop and mobile."
         },
         {
             "id": "bootstrap",
             "name": "Bootstrap",
             "url": "http://getbootstrap.com/",
             "logo": "http://getbootstrap.com/apple-touch-icon.png",
-            "description": ""
+            "description": "Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development."
         },
         {
             "id": "winjs",
             "name": "WinJS",
             "url": "http://try.buildwinjs.com/#listviewinteractions",
             "logo": "https://pbs.twimg.com/profile_images/504385093498970112/TTICt6aq_400x400.png",
-            "description": ""
+            "description": "WinJS is a set of JavaScript toolkits that allow developers to build applications using HTML/JS/CSS technology. It provides a distinct set of UI controls with high polish and performance with fundamental support for touch, mouse, keyboard and accessibility."
         },
         {
             "id": "d3",
             "name": "D3.js",
             "url": "http://d3js.org/",
             "logo": "http://d3js.org/logo.svg",
-            "description": ""
+            "description": "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation. "
         },
         {
             "id": "raphael",
             "name": "Raphaël",
             "url": "http://raphaeljs.com/",
             "logo": "http://raphaeljs.com/i114.png",
-            "description": ""
+            "description": "Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. If you want to create your own specific chart or image crop and rotate widget, for example, you can achieve it simply and easily with this library."
         },
         {
             "id": "threejs",
             "name": "Three.js",
             "url": "http://threejs.org/",
             "logo": "http://shadowviz.herokuapp.com/images/threejs-logo.png",
-            "description": ""
+            "description": "three.js - Javascript 3D library"
         },
         {
             "id": "createjs",
             "name": "CreateJS",
             "url": "http://www.createjs.com/EaselJS",
             "logo": "http://guineashots.com/wp-content/uploads/2014/12/createjs-logo.png",
-            "description": ""
+            "description": "A JavaScript library that makes working with the HTML5 Canvas element easy. Useful for creating games, generative art, and other highly graphical experiences."
         },
         {
             "id": "backbone",
             "name": "Backbone.js",
             "url": "http://backbonejs.org/",
             "logo": "http://2.bp.blogspot.com/-xdZxDAStMTc/UQRY8nCnmuI/AAAAAAAAW98/sqp4pXNrlE8/s1600/Backbone_logo_logo_only.png",
-            "description": ""
+            "description": "Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface."
         },
         {
             "id": "ember",
             "name": "Ember.js",
             "url": "http://emberjs.com/",
             "logo": "http://emberjs.com/images/logos/ember-logo.png",
-            "description": ""
+            "description": "Ember.js - A framework for creating ambitious web applications."
         },
         {
             "id": "knockout",
             "name": "Knockout",
             "url": "http://knockoutjs.com/",
             "logo": "http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/06/1401635488knockout.png",
-            "description": ""
+            "description": "Simplify dynamic JavaScript UIs with the Model-View-View Model (MVVM) pattern"
         },
         {
             "id": "meteor",
             "name": "Meteor",
             "url": "https://www.meteor.com/",
             "logo": "https://d14jjfgstdxsoz.cloudfront.net/meteor-logo.png",
-            "description": ""
+            "description": "Meteor is a complete open source platform for building web and mobile apps in pure JavaScript."
         },
         {
             "id": "underscore",
             "name": "Underscore.js",
             "url": "http://underscorejs.org/",
             "logo": "http://underscorejs.org/docs/images/underscore.png",
-            "description": ""
+            "description": "Underscore is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. It’s the answer to the question: “If I sit down in front of a blank HTML page, and want to start being productive immediately, what do I need?” … and the tie to go along with jQuery's tux and Backbone's suspenders. "
         },
         {
             "id": "handlebars",
             "name": "Handlebars",
             "url": "http://handlebarsjs.com/",
             "logo": "http://cironunes.com/js-microlibs-talk/img/logo-handlebars.png",
-            "description": ""
+            "description": "Handlebars provides the power necessary to let you build semantic templates effectively with no frustration."
         },
         {
             "id": "jasmine",
             "name": "jasmine",
             "url": "http://jasmine.github.io/",
             "logo": "https://camo.githubusercontent.com/d3afdfc8b8075b9daf5109c4af7b8b07ab2d7c04/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667",
-            "description": ""
+            "description": "Jasmine: Behavior-Driven JavaScript"
         },
         {
             "id": "qunit",
             "name": "QUnit",
             "url": "https://qunitjs.com/",
             "logo": "https://jquery.org/resources/home/icn-qunit-logo.png",
-            "description": ""
+            "description": "QUnit is a powerful, easy-to-use JavaScript unit testing framework. It's used by the jQuery, jQuery UI and jQuery Mobile projects and is capable of testing any generic JavaScript code, including itself!"
         },
         {
             "id": "mocha",
             "name": "Mocha",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://mochajs.org/",
+            "logo": "http://www.zsoltnagy.eu/wp-content/uploads/2015/04/mocha1.png",
+            "description": "Mocha is a feature-rich JavaScript test framework running on node.js and the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. "
         },
         {
             "id": "jest",
             "name": "Jest",
             "url": "https://facebook.github.io/jest/",
             "logo": "https://facebook.github.io/jest/img/jest_logo_nav.png",
-            "description": ""
+            "description": "Painless JavaScript Unit Testing"
         },
         {
             "id": "react",
             "name": "React",
             "url": "https://facebook.github.io/react/",
             "logo": "https://facebook.github.io/react/img/logo.svg",
-            "description": ""
+            "description": "A JavaScript library for building user interfaces"
         },
         {
             "id": "marionette",
             "name": "Marionette",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://marionettejs.com/",
+            "logo": "http://benmccormick.org/content/images/2014/12/marionettelogo.png",
+            "description": "Marionette simplifies your Backbone application code with robust views and architecture solutions."
         },
         {
             "id": "famous",
             "name": "Famo.us",
             "url": "https://famo.us/",
             "logo": "http://code.famo.us/assets/famous_logo.svg",
-            "description": ""
+            "description": "High-performance javascript library for animations & interfaces"
         },
         {
             "id": "lodash",
             "name": "Lodash",
             "url": "https://lodash.com/",
             "logo": "http://dojofoundation.org/images/projects/sized-lodash.png",
-            "description": ""
+            "description": "A JavaScript utility library delivering consistency, modularity, performance, & extras."
         },
         {
             "id": "riot",
             "name": "Riotjs",
             "url": "https://muut.com/riotjs/",
             "logo": "https://raw.githubusercontent.com/muut/riotjs/master/doc/logo/riot480x.png",
-            "description": ""
+            "description": "A React- like, 3.5KB user interface library"
         },
         {
             "id": "rxjs",
             "name": "Rx Js",
-            "url": "",
-            "logo": "",
-            "description": ""
-        },
-        {
-            "id": "superagent",
-            "name": "Superagent",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "https://github.com/Reactive-Extensions/RxJS",
+            "logo": "https://avatars3.githubusercontent.com/u/984368?v=3&s=400",
+            "description": "The Reactive Extensions for JavaScript"
         },
         {
             "id": "vue",
             "name": "Vue.js",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://vuejs.org/",
+            "logo": "http://vuejs.org/images/logo.png",
+            "description": "Vue.js is a library for building interactive web interfaces. It provides data-reactive components with a simple and flexible API."
         },
         {
             "id": "mithril",
             "name": "Mithril.js",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "https://lhorie.github.io/mithril/",
+            "logo": "http://jsframeworkpicker.com/img/mithril.png",
+            "description": "Mithril is a client-side MVC framework - a tool to organize code in a way that is easy to think about and to maintain."
         },
         {
             "id": "baconjs",
             "name": "Bacon.js",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "https://baconjs.github.io/",
+            "logo": "https://baconjs.github.io/logo.png",
+            "description": "Bacon.js is a functional reactive programming library for javascript."
         },
         {
             "id": "ractive",
             "name": "Ractive",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://www.ractivejs.org/",
+            "logo": "https://pbs.twimg.com/profile_images/378800000183131829/b891119639d7a5072c0e825531085cf6_400x400.png",
+            "description": "Ractive.js is a template-driven UI library, but unlike other tools that generate inert HTML, it transforms your templates into blueprints for apps that are interactive by default."
         },
         {
             "id": "rivets",
             "name": "Rivets",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://rivetsjs.com/",
+            "logo": "http://justbuildsomething.com/wp-content/uploads/2014/07/Agnostic-Data-Binding-with-Rivets.js.jpg",
+            "description": "Lightweight and powerful data binding + templating solution for building modern web applications."
         },
         {
             "id": "aurelia",
             "name": "Aurelia",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://aurelia.io/",
+            "logo": "http://aurelia.io/images/main-logo.png",
+            "description": "Aurelia is a next generation JavaScript client framework that leverages simple conventions to empower your creativity. "
         },
         {
             "id": "ampersand",
             "name": "Ampersand.js",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://ampersandjs.com/",
+            "logo": "http://ampersandjs.com/public/images/ampersand-at-the-beach.svg",
+            "description": "A highly modular, loosely coupled, non-frameworky framework for building advanced JavaScript apps."
         },
         {
             "id": "ionic",
             "name": "Ionic",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://ionicframework.com/docs/",
+            "logo": "https://ionic-apps.s3.amazonaws.com/img/ionitron-twitter.png",
+            "description": "Ionic makes it incredibly easy to build beautiful and interactive mobile apps using HTML5 and AngularJS."
         },
         {
             "id": "modernizr",
             "name": "Modernizr",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://modernizr.com/",
+            "logo": "http://modernizr.com/i/img/logo-x12.png",
+            "description": "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser."
         },
         {
             "id": "zepto",
             "name": "Zepto",
-            "url": "",
-            "logo": "",
-            "description": ""
-        },
-        {
-            "id": "fastclick",
-            "name": "Fastclick",
-            "url": "",
-            "logo": "",
-            "description": ""
+            "url": "http://zeptojs.com/",
+            "logo": "http://zeptojs.com/logo.png",
+            "description": "Zepto is a minimalist JavaScript library for modern browsers with a largely jQuery-compatible API."
         }
     ],
     "keywords": [
         {
-            "id": "widget",
-            "name": "Widget",
-            "libs": ["dojo", "ext"]
+            "id": "databinding",
+            "name": "Data Binding (MVVM, MV*)",
+            "libs": ["ember", "marionette", "vue", "knockout", "ractive", "rivets", "aurelia"]
         },
         {
-            "id": "databinding",
-            "name": "Data Binding",
-            "libs": ["angular", "ember", "vue", "knockout"]
+            "id": "mvc",
+            "name": "MVC",
+            "libs": ["angular", "backbone", "ember"]
+        },
+        {
+            "id": "virtualdom",
+            "name": "Virtual DOM",
+            "libs": ["react", "riot", "mithril"]
+        },
+        {
+            "id": "frp",
+            "name": "Functional Reactive Programming",
+            "libs": ["rxjs", "baconjs"]
+        },
+        {
+            "id": "template",
+            "name": "Template Engine",
+            "libs": ["handlebars"]
+        },
+        {
+            "id": "dom",
+            "name": "DOM",
+            "libs": ["jquery", "zepto"]
+        },
+        {
+            "id": "visualization",
+            "name": "Visualization",
+            "libs": ["d3", "raphael", "threejs"]
+        },
+        {
+            "id": "animation",
+            "name": "Animation",
+            "libs": ["createjs", "famous"]
+        },
+        {
+            "id": "utility",
+            "name": "Utilities",
+            "libs": ["underscore", "lodash", "rxjs", "baconjs", "modernizr"]
+        },
+        {
+            "id": "mobile",
+            "name": "Mobile",
+            "libs": ["ext", "ionic"]
+        },
+        {
+            "id": "test",
+            "name": "Test",
+            "libs": ["jasmine", "qunit", "mocha", "jest"]
+        },
+        {
+            "id": "widget",
+            "name": "Widget",
+            "libs": ["dojo", "ext", "bootstrap", "winjs"]
+        },
+        {
+            "id": "modular",
+            "name": "Modular",
+            "libs": ["ampersand"]
+        },
+        {
+            "id": "es7",
+            "name": "ES7",
+            "libs": ["aurelia"]
+        },
+        {
+            "id": "platform",
+            "name": "Platform",
+            "libs": ["meteor"]
+        },
+        {
+            "id": "webcomponents",
+            "name": "Web Components",
+            "libs": ["polymer"]
+        },
+        {
+            "id": "polyfill",
+            "name": "Polyfill",
+            "libs": ["polymer"]
+        },
+        {
+            "id": "microsoft",
+            "name": "Microsoft",
+            "libs": ["winjs", "knockout"]
+        },
+        {
+            "id": "google",
+            "name": "Google",
+            "libs": ["angular", "polymer"]
+        },
+        {
+            "id": "facebook",
+            "name": "Facebook",
+            "libs": ["react", "jest"]
         }
     ]
 }
