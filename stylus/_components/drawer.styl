@@ -1,0 +1,100 @@
+.component__drawer
+  
+  position absolute
+  top 0
+  left 0
+  height 100%
+  width 260px
+  overflow auto
+  display block
+  z-index 999
+
+  trans_inOutBack(.6s)
+  gradient_main()
+  transform translateX(0)
+  opacity 1
+  
+  &.slide-enter, &.slide-leave
+    transform translateX(-500px)
+    opacity 0
+
+  .drawer
+    width 220px
+    margin 72px 20px 20px
+    color #fff
+  
+    .closeWrap
+      position absolute
+      top 20px
+      right 20px
+
+    .close
+      @extend .button-close
+
+  .layout_section
+    margin 20px 0
+    padding-bottom 20px
+    border-bottom .99px solid rgba(255,255,255,.1)
+    
+    &.last
+      margin-bottom 0
+      padding-bottom 0
+      border none
+  
+  .heading-2
+    margin-bottom 20px
+    fontsize 14px
+
+  .descriptions
+    fontsize 12px
+    line-height 1.7em
+    letter-spacing .09em
+    color #fff
+
+  .heading-3
+    font-family 'Roboto Light'
+    color #e6cecb
+    margin 20px 0
+    fontsize 13px
+    letter-spacing .09em
+
+  .profile
+    height 53px
+    margin 12px 0
+    clearfix()
+
+    .profile_photo
+      float left
+      width 50px
+      margin-right 25px
+      img
+        width 50px
+        border-radius 100%
+
+    .profile_body
+      float left
+      width 146px
+      padding 8px 0 0 0
+      margin-left -10px
+    
+    .profile_name,
+    .profile_job
+      fontsize 12px
+      font-family 'Roboto Light'
+      font-weight bold
+      letter-spacing .09em
+
+    .profile_job
+      color #121213
+
+  .social_container
+    display none
+    margin 24px 0
+
+    .social_item
+      display inline-block
+
+@media (max-width: 768px)
+  .component__drawer
+    .social_container
+      display block

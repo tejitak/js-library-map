@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#  article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <title>JS Library Map</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:400,300,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body id="app">
+  <div v-show="initialized">
+    
+    <div class="component__main container">
+      <article class="component__map-view">
+        <vue-map v-with="items: items"></vue-map>
+      </article>
+      <aside class="component__option-lists" role="tabs" v-show="navigationOpened">
+        <vue-tab v-with="items: items, keywords: keywords"></vue-tab>
+      </aside>
+    </div>
+    
+    
+    <footer class="component__footer">
+      <h1 class="servive-name"><span>JS Library Map</span></h1>
+      <nav class="footer_navigations">
+        <a class="nav_item" v-on="click: toggleAboutUs" herf="javascript:void(0);">What's JS Library Map</a>
+        <span class="deactive nav_item">Register a library</span>
+      </nav>
+      <div class="copyright">
+        <p>Created by <a href="https://twitter.com/tejitak" target="_blank">tejitak</a></p>
+      </div>
+      <div class="footer_menu"><a href="javascript:;" class="nav_item" v-on="click: toggleNavigation()">MENU</a></div>
+    </footer>
+    
+    <!-- components -->
+    <vue-popup v-show="popupOpened" v-transition="expand" title="{{selectedItem.name}}" v-with="loading: loading" v-draggable>
+        <vue-popup-content v-with="selectedItem"></vue-popup-content>
+    </vue-popup>
+
+    <div class="component__drawer" v-component="vue-drawer" v-show="drawerOpened" v-transition="slide">
+      <section class="about layout_section">
+        <h2 class="heading-2">Library Map</h2>
+        <div class="descriptions">
+          <p>hoge</p>
+        </div>
+      </section>
+      
+      <section class="members layout_section last">
+        <h3 class="heading-3">Develop &amp; Design</h3>
+        <dl class="profile" v-repeat="creators">
+          <dt class="profile_photo">
+            <img v-attr="src: img" />
+          </dt>
+          <dd class="profile_body">
+            <p class="profile_job">{{job}}</p>
+            <p class="profile_name">{{name}}</p>
+          </dd>
+        </dl>
+      </section>
+    </div>
+    <!--/ components -->
+    
+  </div>
+  <!-- /initialized -->
+  
+  <!-- script -->
+  <script>
+  var OPTION = {
+      debug: true
+  };
+  </script>
+  <script src="./dist/main.js"></script>
+</body>
+</html>

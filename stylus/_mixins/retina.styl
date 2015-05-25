@@ -1,0 +1,35 @@
+/*
+    Retina用のmixinなど
+*/
+
+/* SpriteをRetina対応 */
+retina($x)
+  $s = $x / 5.5
+  floor($s)
+
+sprite($args)
+  background-image url($args[8])
+  background-position retina($args[2]) retina($args[3])+1
+  background-repeat no-repeat
+  background-size retina($args[6]) retina($args[7])
+  width retina($args[4])+1
+  height retina($args[5])+1
+  display block
+
+// Desktop用 Retina DisplayでのBorder .5pxを実現するmixin
+retinaScreen = s("screen and (-webkit-min-device-pixel-ratio:2),(min-resolution: 2dppx)")
+
+
+retinaBorder($DOMPath)
+  if $objectName
+    
+    /* Retina */
+    @media retinaScreen
+      {$DOMPath}
+        border-width 0.99px
+        // 0.5pxだとSafari 7.0以下でborderがみえなくなる
+
+    /* Chromeは.5pxを四捨五入するので… */
+    .chrome
+      {$DOMPath}
+        border-width 1px

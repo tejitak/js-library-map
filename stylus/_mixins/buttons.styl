@@ -1,0 +1,54 @@
+/* Buttons Mixin */
+
+solidButton($width=140px, $height=40px, $radius=6px, $color=#02de83, $solid=6px)
+    
+    cancel-button()
+    width $width
+    height $height
+    overflow hidden
+    border-radius $radius
+    margin-bottom $space_10
+    box-shadow 0 2px 8px -2px rgba(0,0,0,.1)
+    background $color
+    position relative
+    z-index 1
+    color #fff
+    fontsize 14px
+    font-weight bold
+    text-shadow 0 1px 1px rgba(0,0,0,.1)
+    margin-left 10px
+
+    &:before
+        content ''
+        position absolute
+        display block
+        width 100%
+        background @background
+        border-radius $radius
+        height 28px
+        z-index -1
+        margin-top $solid
+
+    &:after
+        content ''
+        display block
+        position absolute
+        z-index -2
+        margin-top 5px
+        width 100%
+        height 20px
+        border-radius 0 0 $radius $radius
+        background rgba(0,0,0,.2)
+
+
+cancelButton($width=140px, $height=40px, $radius=6px)
+    
+    cancel-button()
+    border 2px solid $border_basic
+    width $width
+    height $height - 4 px
+    border-radius $radius
+    fontsize 14px
+    font-weight bold
+    color $border_basic
+    

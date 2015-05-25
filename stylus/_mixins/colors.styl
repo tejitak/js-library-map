@@ -1,0 +1,38 @@
+/* グラデーションなどのカラーに関するmixin */
+
+gradient-repeating-linear($direction,$args...)
+    
+    if $direction is 'right'
+
+        background-image -webkit-repeating-linear-gradient(to right, $args)
+        background-image -moz-repeating-linear-gradient(to right, $args)
+        background-image -o-repeating-linear-gradient(to right, $args)
+        background-image -ms-repeating-linear-gradient(to right, $args)
+        background-image repeating-linear-gradient(to right, $args)
+        
+    else if $direction is 'top'
+
+        background-image -webkit-repeating-linear-gradient(to top, $args)
+        background-image -moz-repeating-linear-gradient(to top, $args)
+        background-image -o-repeating-linear-gradient(to top, $args)
+        background-image -ms-repeating-linear-gradient(to top, $args)
+        background-image repeating-linear-gradient(to top, $args)
+        
+    else
+
+        background-image -webkit-repeating-linear-gradient($args)
+        background-image -moz-repeating-linear-gradient($args)
+        background-image -o-repeating-linear-gradient($args)
+        background-image -ms-repeating-linear-gradient($args)
+        background-image repeating-linear-gradient($args)
+             
+
+
+
+gradient-linear(startPoint, startColor, startInterval, endColor, endInterval)
+	background-color startColor
+	background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+	background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)

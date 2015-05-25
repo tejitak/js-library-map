@@ -1,0 +1,55 @@
+/* transition, animationのmixin */
+
+trans_1(time=.2s)
+  vendor transition time ease-out
+
+trans_opacity(time=.2s)
+  vendor transition opacity time ease-out
+
+trans_background(time=.2s)
+  vendor transition background time ease-out
+
+// easeInOutQuint
+trans_2(time=.2s)
+  vendor transition time cubic-bezier(0.860, 0.000, 0.070, 1.000) 
+
+// easeInOutBack
+trans_inOutBack(time=.2s)
+  vendor transition time cubic-bezier(0.680, 0, 0.265, 1) 
+
+// outTurn
+trans_outTurn(time=.2s)
+  vendor transition time cubic-bezier(.17,1.22,.58,1.05)
+
+// bounce
+trans_bounce(time=.2s)
+  vendor transition time cubic-bezier(.49,-0.56,.33,1.41)
+
+// 折りたたみ
+trans_folding()
+  $prop = translate3d(0px,0px,0px) rotate3d(1,0,0,90deg)
+  vender transform $prop
+
+// トップページのスライド用
+trans_homeslide(s=1.0)
+  vendor transform scale(s)
+
+// Adminのリスト類でのhoverアクション
+adminListHover()
+  transform translateX(2px)
+
+@keyframes fade-in
+  0%
+    opacity 0
+  100%
+    opacity 1
+@keyframes bound
+  0%
+    opacity .2
+    transform translateY(-10px)
+  50%
+    opacity 1
+    transform translateY(0)
+  100%
+    opacity .2
+    transform translateY(-10px)

@@ -1,0 +1,27 @@
+/*
+    ありとあらゆるものをキャンセルしていくmixin
+*/
+
+cancel-hover-decoration()
+  &:hover
+      text-decoration none
+
+cancel-button()
+  background none
+  border none
+  padding 0
+
+cancel-figure()
+  padding 0
+  margin 0
+
+cancel-list-style()
+  list-style-type none
+  margin 0
+  padding 0
+
+cancel-beforeafter()
+  &:before
+      display none
+  &:after
+      display none

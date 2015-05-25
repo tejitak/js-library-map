@@ -1,0 +1,86 @@
+/* 吹き出しの三角形用mixin */
+
+
+
+// 左方向
+triangle-left(size=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-right size solid color-value
+    border-top size solid transparent
+    border-bottom size solid transparent
+
+// 右方向
+triangle-right(size=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-left size solid color-value
+    border-top size solid transparent
+    border-bottom size solid transparent
+
+// 上方向
+triangle-top(size=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-bottom size solid color-value
+    border-left size solid transparent
+    border-right size solid transparent
+
+// 下方向
+triangle-bottom(size=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-top size solid color-value
+    border-left size solid transparent
+    border-right size solid transparent
+
+
+// 右半分
+triangle-rightbottom(sizetop=4px, sizebottom=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-bottom sizetop solid color-value
+    border-left sizebottom solid transparent
+
+// 左半分
+triangle-leftbottom(sizetop=4px, sizebottom=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-bottom sizetop solid color-value
+    border-right sizebottom solid transparent
+
+// 反右半分
+triangle-righttop(sizetop=4px, sizebottom=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-top sizetop solid color-value
+    border-left sizebottom solid transparent
+
+// 反左半分
+triangle-righttop(sizetop=4px, sizebottom=4px, color-value=#000)
+    content ''
+    display block
+    width 0
+    height 0
+    border-top sizetop solid color-value
+    border-right sizebottom solid transparent
+
+
+
+
+
+

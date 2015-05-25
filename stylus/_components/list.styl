@@ -1,0 +1,23 @@
+.component__list
+  clear both
+  .item
+    color #fff
+    list-style-type none
+    &.selected
+      background-color #102f51
+
+    a, dl
+      color #fff
+      display block
+      border-bottom .99px solid rgba(255,255,255,.1)
+      padding 15px 20px
+      text-decoration none
+      trans_1(.4s)
+      fontsize 14px
+      cursor pointer
+      &:hover
+        border-bottom-color rgb(255, 255, 255, .4)
+        background rgba(0,0,0,.1)
+
+    .ranking
+      display none

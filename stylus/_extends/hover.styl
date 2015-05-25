@@ -1,0 +1,21 @@
+.navigation-hover
+  trans_1(.2s)
+  &:hover
+    color #1c94c1
+    cursor pointer
+    transform scale(1.05)
+
+.button-close
+  display block
+  width 20px
+  height 20px
+  background-repeat no-repeat
+  background-image url(/img/icon-close.svg)
+  trans_inOutBack(.6s)
+
+  &:hover
+    transform rotate(180deg)
+    opacity .5
+  &:active
+    transform rotate(-180deg)
+    opacity 1

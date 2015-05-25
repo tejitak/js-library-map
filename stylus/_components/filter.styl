@@ -1,0 +1,47 @@
+input::-webkit-input-placeholder
+  color #fff
+  fontsize 12px
+
+input:-moz-placeholder
+  color #fff
+  fontsize 12px
+
+.component__filter
+  border-bottom 1px solid rgba(0,0,0,.2)
+  text-align center
+  clarfix()
+  position relative
+  padding 5px 0 5px 10px
+  height 40px
+  label
+    color rgba(255,255,255,.6)
+    fontsize 12px
+    float left
+    font-family robot
+    position relative
+    top 14px
+    left 5px
+
+  input[type=text]
+    width 205px
+    margin-left 20px
+    text-align left
+    fontsize 16px
+    outline none
+    background none
+    border none
+    background rgba(0,0,0,.5)
+    box-shadow none
+    color #fff
+    padding 10px 10px 7px 10px
+    margin-top 3px
+    trans_1(.2s)
+    &:focus
+      background #fff
+      color #000
+      input::-webkit-input-placeholder
+        color #ccc
+
+      input:-moz-placeholder
+        color #ccc
+

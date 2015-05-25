@@ -1,0 +1,289 @@
+{
+    "libs": [
+        {
+            "id": "dojo",
+            "name": "Dojo Toolkit",
+            "url": "https://dojotoolkit.org/",
+            "logo": "http://dojofoundation.org/images/projects/dojoToolkitLogo.png",
+            "description": ""
+        },
+        {
+            "id": "jquery",
+            "name": "jQuery",
+            "url": "https://jquery.com/",
+            "logo": "http://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/320px-JQuery_logo.svg.png",
+            "description": ""
+        },
+        {
+            "id": "ext",
+            "name": "Sencha Ext JS",
+            "url": "http://www.sencha.com/products/extjs/",
+            "logo": "http://upload.wikimedia.org/wikipedia/fr/a/a2/Ext_js_logo.jpeg",
+            "description": ""
+        },
+        {
+            "id": "angular",
+            "name": "AngularJS",
+            "url": "https://angularjs.org/",
+            "logo": "https://angularjs.org/img/AngularJS-large.png",
+            "description": ""
+        },
+        {
+            "id": "polymer",
+            "name": "Polymer",
+            "url": "https://www.polymer-project.org/",
+            "logo": "https://www.polymer-project.org/images/logos/lockup.svg",
+            "description": ""
+        },
+        {
+            "id": "bootstrap",
+            "name": "Bootstrap",
+            "url": "http://getbootstrap.com/",
+            "logo": "http://getbootstrap.com/apple-touch-icon.png",
+            "description": ""
+        },
+        {
+            "id": "winjs",
+            "name": "WinJS",
+            "url": "http://try.buildwinjs.com/#listviewinteractions",
+            "logo": "https://pbs.twimg.com/profile_images/504385093498970112/TTICt6aq_400x400.png",
+            "description": ""
+        },
+        {
+            "id": "d3",
+            "name": "D3.js",
+            "url": "http://d3js.org/",
+            "logo": "http://d3js.org/logo.svg",
+            "description": ""
+        },
+        {
+            "id": "raphael",
+            "name": "Raphaël",
+            "url": "http://raphaeljs.com/",
+            "logo": "http://raphaeljs.com/i114.png",
+            "description": ""
+        },
+        {
+            "id": "threejs",
+            "name": "Three.js",
+            "url": "http://threejs.org/",
+            "logo": "http://shadowviz.herokuapp.com/images/threejs-logo.png",
+            "description": ""
+        },
+        {
+            "id": "createjs",
+            "name": "CreateJS",
+            "url": "http://www.createjs.com/EaselJS",
+            "logo": "http://guineashots.com/wp-content/uploads/2014/12/createjs-logo.png",
+            "description": ""
+        },
+        {
+            "id": "backbone",
+            "name": "Backbone.js",
+            "url": "http://backbonejs.org/",
+            "logo": "http://2.bp.blogspot.com/-xdZxDAStMTc/UQRY8nCnmuI/AAAAAAAAW98/sqp4pXNrlE8/s1600/Backbone_logo_logo_only.png",
+            "description": ""
+        },
+        {
+            "id": "ember",
+            "name": "Ember.js",
+            "url": "http://emberjs.com/",
+            "logo": "http://emberjs.com/images/logos/ember-logo.png",
+            "description": ""
+        },
+        {
+            "id": "knockout",
+            "name": "Knockout",
+            "url": "http://knockoutjs.com/",
+            "logo": "http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/06/1401635488knockout.png",
+            "description": ""
+        },
+        {
+            "id": "meteor",
+            "name": "Meteor",
+            "url": "https://www.meteor.com/",
+            "logo": "https://d14jjfgstdxsoz.cloudfront.net/meteor-logo.png",
+            "description": ""
+        },
+        {
+            "id": "underscore",
+            "name": "Underscore.js",
+            "url": "http://underscorejs.org/",
+            "logo": "http://underscorejs.org/docs/images/underscore.png",
+            "description": ""
+        },
+        {
+            "id": "handlebars",
+            "name": "Handlebars",
+            "url": "http://handlebarsjs.com/",
+            "logo": "http://cironunes.com/js-microlibs-talk/img/logo-handlebars.png",
+            "description": ""
+        },
+        {
+            "id": "jasmine",
+            "name": "jasmine",
+            "url": "http://jasmine.github.io/",
+            "logo": "https://camo.githubusercontent.com/d3afdfc8b8075b9daf5109c4af7b8b07ab2d7c04/68747470733a2f2f7261776769746875622e636f6d2f6a61736d696e652f6a61736d696e652f6d61737465722f696d616765732f6a61736d696e652d686f72697a6f6e74616c2e737667",
+            "description": ""
+        },
+        {
+            "id": "qunit",
+            "name": "QUnit",
+            "url": "https://qunitjs.com/",
+            "logo": "https://jquery.org/resources/home/icn-qunit-logo.png",
+            "description": ""
+        },
+        {
+            "id": "mocha",
+            "name": "Mocha",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "jest",
+            "name": "Jest",
+            "url": "https://facebook.github.io/jest/",
+            "logo": "https://facebook.github.io/jest/img/jest_logo_nav.png",
+            "description": ""
+        },
+        {
+            "id": "react",
+            "name": "React",
+            "url": "https://facebook.github.io/react/",
+            "logo": "https://facebook.github.io/react/img/logo.svg",
+            "description": ""
+        },
+        {
+            "id": "marionette",
+            "name": "Marionette",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "famous",
+            "name": "Famo.us",
+            "url": "https://famo.us/",
+            "logo": "http://code.famo.us/assets/famous_logo.svg",
+            "description": ""
+        },
+        {
+            "id": "lodash",
+            "name": "Lodash",
+            "url": "https://lodash.com/",
+            "logo": "http://dojofoundation.org/images/projects/sized-lodash.png",
+            "description": ""
+        },
+        {
+            "id": "riot",
+            "name": "Riotjs",
+            "url": "https://muut.com/riotjs/",
+            "logo": "https://raw.githubusercontent.com/muut/riotjs/master/doc/logo/riot480x.png",
+            "description": ""
+        },
+        {
+            "id": "rxjs",
+            "name": "Rx Js",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "superagent",
+            "name": "Superagent",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "vue",
+            "name": "Vue.js",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "mithril",
+            "name": "Mithril.js",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "baconjs",
+            "name": "Bacon.js",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "ractive",
+            "name": "Ractive",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "rivets",
+            "name": "Rivets",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "aurelia",
+            "name": "Aurelia",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "ampersand",
+            "name": "Ampersand.js",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "ionic",
+            "name": "Ionic",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "modernizr",
+            "name": "Modernizr",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "zepto",
+            "name": "Zepto",
+            "url": "",
+            "logo": "",
+            "description": ""
+        },
+        {
+            "id": "fastclick",
+            "name": "Fastclick",
+            "url": "",
+            "logo": "",
+            "description": ""
+        }
+    ],
+    "keywords": [
+        {
+            "id": "widget",
+            "name": "Widget",
+            "libs": ["dojo", "ext"]
+        },
+        {
+            "id": "databinding",
+            "name": "Data Binding",
+            "libs": ["angular", "ember", "vue", "knockout"]
+        }
+    ]
+}

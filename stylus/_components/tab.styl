@@ -1,0 +1,55 @@
+.component__tab
+  width 300px
+  overflow hidden
+  .tabHeader
+    height 80px
+    width 100%
+    nav
+      margin 0
+      padding 0
+      display block
+      flex 0
+      width 100%
+
+    .tab-trigger
+      display block
+      float left
+      width 50%
+      padding 0
+      position relative
+      &:first-child
+        &:before
+          content ''
+          width 1px
+          height 50px
+          border-left .99px solid #dcdcdc
+          position absolute
+          right 0
+          top .7em
+      a
+        display block
+        padding 32px  20px 20px 20px
+        text-decoration none
+        text-align center
+        fontsize 13px
+        color #adadad
+        position relative
+        @extend .navigation-hover
+        
+          
+
+      &.Selected
+        a
+          color #23302b
+          &:after
+            triangle-top(8px, #454860)
+            bottom -8px
+            position absolute
+            left 50%
+            margin-left -5px
+  .tabContent
+    width 300px
+    gradient_main()
+    
+    [function=scroll-1], [function=scroll-2]
+      overflow-y auto
