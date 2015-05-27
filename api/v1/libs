@@ -262,14 +262,9 @@
     ],
     "keywords": [
         {
-            "id": "databinding",
-            "name": "Data Binding (MVVM, MV*)",
-            "libs": ["ember", "marionette", "vue", "knockout", "ractive", "rivets", "aurelia"]
-        },
-        {
             "id": "mvc",
-            "name": "MVC",
-            "libs": ["angular", "backbone", "ember"]
+            "name": "MVC, MVVM, MV*",
+            "libs": ["angular", "backbone", "ember", "marionette", "vue", "knockout", "ractive", "rivets", "aurelia"]
         },
         {
             "id": "virtualdom",
