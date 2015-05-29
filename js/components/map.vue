@@ -13,6 +13,7 @@
 module.exports = {
     data: function () {
         return {
+            selectedItem: null,
             items: []
         }
     },
@@ -22,7 +23,15 @@ module.exports = {
 
     methods: {
         selectItem: function(item){
-            this.$root.showPopup(item.id)
+            // toggle highlight by click
+            this.$dispatch("onPopupClose")
+            if(this.selectedItem === item){
+                this.$root.onChangeSelection([])
+                this.selectedItem = null
+            }else{
+                this.$root.onChangeSelection([item.id])
+                this.selectedItem = item
+            }
         }
     }
 }

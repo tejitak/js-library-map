@@ -62,6 +62,7 @@ var app = module.exports = new Vue({
                 cache: false,
                 success: (res) => {
                     this.initialized = true
+                    this.selectAll(res.libs)
                     this.updateLibs(res.libs)
                     this.keywords = res.keywords
                 },
@@ -78,7 +79,6 @@ var app = module.exports = new Vue({
                     t: Math.floor(Math.random() * (mainH - MAX_IMAGE_SIZE)),
                     l: Math.floor(Math.random() * (mainW - MAX_IMAGE_SIZE))
                 }
-                lib.selected = true
             })
             this.items = libs
         },
@@ -86,9 +86,7 @@ var app = module.exports = new Vue({
         onChangeSelection: function(ids){
             if(!ids || ids.length == 0) { 
                 // clear selections
-                this.items.forEach((item) => {
-                    item.selected = true
-                })                
+                this.selectAll(this.items)
                 return
             }
             if(ids.length === 1){
@@ -98,6 +96,12 @@ var app = module.exports = new Vue({
             // set selected flag
             this.items.forEach((item) => {
                 item.selected = $.inArray(item.id, ids) >= 0 ? true : false
+            })
+        },
+
+        selectAll: function(items){
+            items.forEach((item) => {
+                item.selected = true
             })
         },
 
